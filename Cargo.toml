@@ -1,0 +1,28 @@
+[package]
+name = "Ktools"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iced = { git = "https://github.com/hecrj/iced", features = ["tokio"] }
+serde = { version = "1.0.117", features = ["derive"] }
+serde_json = "1.0.60"
+tokio = { version = "1.0", features = ["full"] }
+#iced = { git = "https://github.com/hecrj/iced", default-features = false, features = ["async-std", "debug", "glow"] }
+#async-std = "1"
+#directories = "2"
+rayon = "1.5.0"
+
+
+# tokio = { version = "0.3.5", features = ["full"] }
+#tokio = { version = "0.2", features = ["full"] }
+#reqwest = "0.10.9"
+#structopt = "0.3.21"
+futures = "0.3.8"
+#anyhow = "1.0.34"
+[build-dependencies]
+cc = "1.0"
+#bindgen = "0.56.0"
