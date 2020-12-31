@@ -8,20 +8,20 @@ use std::time::{Duration, Instant};
 
 use tokio;
 
-extern "C" {
-    pub fn main2(
-        numArgs: std::os::raw::c_int,
-        args: *mut *const std::os::raw::c_char,
-        rs: *mut std::os::raw::c_char,
-    ) -> std::os::raw::c_int;
-}
+// extern "C" {
+//     pub fn main2(
+//         numArgs: std::os::raw::c_int,
+//         args: *mut *const std::os::raw::c_char,
+//         rs: *mut std::os::raw::c_char,
+//     ) -> std::os::raw::c_int;
+// }
 
 
-pub fn call() {
-    unsafe {
-        // main2(1,::std::os::);
-    }
-}
+// pub fn call() {
+//     unsafe {
+//         // main2(1,::std::os::);
+//     }
+// }
 
 pub fn main() -> iced::Result {
     // call();
